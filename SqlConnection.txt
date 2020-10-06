@@ -1,22 +1,44 @@
 ##Propriedades	 
 
 #Connection				 
-Recupera a conex„o associada a transaÁ„o
+Recupera a conex√£o associada a transa√ß√£o
 
 #IsolationLevel			
-Define a forma de isolamento da transaÁ„o.
+Define a forma de isolamento da transa√ß√£o.
 
 #ReadCommitted (Default) 
-Os dados inseridos em transaÁıes sÛ poder„o ser acessÌveis apÛs a confirmaÁ„o da transaÁ„o.
+Os dados inseridos em transa√ß√µes s√≥ poder√£o ser acess√≠veis ap√≥s a confirma√ß√£o da transa√ß√£o.
 
 #ReadUncommitted 		
-Os dados inseridos em transaÁıes poder„o ser acessÌveis antes da confirmaÁ„o da transaÁ„o.
+Os dados inseridos em transa√ß√µes poder√£o ser acess√≠veis antes da confirma√ß√£o da transa√ß√£o.
  	 
 #Commit					
-Confirma os dados manipulados pela transaÁ„o.
+Confirma os dados manipulados pela transa√ß√£o.
 
 #Rollback				
-Cancela os dados manipulados pela transaÁ„o.
+Cancela os dados manipulados pela transa√ß√£o.
 
 #Save					
-Salva um ponto de controle de transaÁ„o.
+Salva um ponto de controle de transa√ß√£o.
+
+
+#Exemplo de c√≥digo para cria√ß√£o e utiliza√ß√£o de um Transa√ß√£o Gravando os Dados:
+SqlConnection conn = new SqlConnection("server=MSBR; uid=sa; pwd=123456");
+SqlTransaction tran;
+tran = conn.BeginTransaction(IsolationLevel.ReadCommitted);
+string STRSQL = 
+"INSERT INTO TESTE VALUES (" + textBox1.Text + ",'" + textBox2.Text + "')";
+SqlCommand cmd = new SqlCommand(STRSQL, conn, tran);
+cmd.ExecuteNonQuery();
+tran.Commit();
+ 
+#Exemplo de c√≥digo para cria√ß√£o e utiliza√ß√£o de um Transa√ß√£o Cancelando os Dados:
+SqlConnection conn = new SqlConnection("server=msbr; uid=sa; pwd=123456");
+SqlTransaction tran;
+tran = conn.BeginTransaction(IsolationLevel.ReadCommitted);
+string STRSQL = 
+"INSERT INTO TESTE VALUES (" + textBox1.Text + ",'" + textBox2.Text + "')";
+SqlCommand cmd = new SqlCommand(STRSQL, conn, tran);
+cmd.ExecuteNonQuery();
+tran.RollBack();
+
