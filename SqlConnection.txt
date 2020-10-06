@@ -1,0 +1,22 @@
+##Propriedades	 
+
+#Connection				 
+Recupera a conexão associada a transação
+
+#IsolationLevel			
+Define a forma de isolamento da transação.
+
+#ReadCommitted (Default) 
+Os dados inseridos em transações só poderão ser acessíveis após a confirmação da transação.
+
+#ReadUncommitted 		
+Os dados inseridos em transações poderão ser acessíveis antes da confirmação da transação.
+ 	 
+#Commit					
+Confirma os dados manipulados pela transação.
+
+#Rollback				
+Cancela os dados manipulados pela transação.
+
+#Save					
+Salva um ponto de controle de transação.
