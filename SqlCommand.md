@@ -1,4 +1,4 @@
-# Sqlommand
+# SqlCommand
 Classe utilizada para executar um comando no banco de dados. O comando poderá ser uma instrução SQL ou a execução de uma Stored Proc.
 
 ## Propriedades
