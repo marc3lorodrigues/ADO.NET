@@ -14,7 +14,7 @@ Define a instrução sql a ser executada.
 #### Connection                
 Define a conexão a ser utilizada.
 
-#### Parameters	
+#### [Parameters](https://github.com/marc3lorodrigues/ADO.NET/blob/main/SqlParameter.md "link de acesso a página SqlParameters")	
 Armazena uma coleção de parâmetros.
 
 ## Eventos
