@@ -25,7 +25,7 @@ Abre a conexão.
 
 ```SqlConnection conn;
 conn = new SqlConnection();
-conn.ConnectionString = "server=TI10\\UNOPAR; Database=master; uid=sa";
+conn.ConnectionString = "server=TI10\\SRV; Database=master; uid=sa";
 conn.Open();
 
 if (conn.State == ConnectionState.Open)
@@ -42,7 +42,7 @@ conn.Dispose();
 ## Exemplo de código para criação de uma conexão: (Otimizado)
 
 ``` 
-SqlConnection conn = new SqlConnection("server=TI10\\UNOPAR; Database=master; uid=sa");
+SqlConnection conn = new SqlConnection("server=TI10\\SRV; Database=master; uid=sa");
 conn.Open();
 
 if (conn.State == ConnectionState.Open)
