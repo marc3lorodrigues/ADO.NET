@@ -10,20 +10,20 @@ ADO.NET é uma biblioteca de classes de acesso e manipulação de dados. Oriundo
 [SqlConnection](SqlConnect.md)<br>
 [SqlTransaction](SqlTransaction.md)<br>
 [SqlCommand](SqlCommand.md)<br>
-[SqlParameters](SqlParameters.md)<br>
+[SqlParameters](SqlParameter.md)<br>
 [SqlDataReader](SqlDataReader.md)<br>
 [SqlDataAdapter](SqlDataAdapter.md)<br>
 
 
 #### Classes ADO.NET para manipulação de dados
-[Dataset](Dataset.md)<br>
-[Datatable](Datatable.md)<br>
+[Dataset](DataSet.md)<br>
+[Datatable](DataTable.md)<br>
 [DataColumn](DataColumn.md)<br>
 [DataRow](DataRow.md)<br>
 
 #### Manipulando através de objetos
-[Acessando Dados com Datatable](acessandoDadoscomDAtaTable.md)<br>
+[Acessando Dados com Datatable](AcessandoDadoscomDataTable.md)<br>
 [Acessando Dados com Datareader](ManipulandoDataReader.md)<br>
 [Manipulando DataSet](ManipulandoDataSet.md)<br>
-[Manipulando DataTable](ManipulandoDataTAble.md)<br>
+[Manipulando DataTable](ManipulandoDataTable.md)<br>
 
