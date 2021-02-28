@@ -6,7 +6,7 @@ ADO.NET é uma biblioteca de classes de acesso e manipulação de dados. Oriundo
 ## As Classes são divididas em 2 grandes grupos, são eles:
 
 	 
-#### Classes ADO.NET para SQLServer: 
+* Classes ADO.NET para SQLServer: <br>
 [SqlConnection](SqlConnect.md)<br>
 [SqlTransaction](SqlTransaction.md)<br>
 [SqlCommand](SqlCommand.md)<br>
@@ -14,7 +14,7 @@ ADO.NET é uma biblioteca de classes de acesso e manipulação de dados. Oriundo
 [SqlDataReader](SqlDataReader.md)<br>
 [SqlDataAdapter](SqlDataAdapter.md)<br>
 
-#### Classes ADO.NET para manipulação de dados:
+* Classes ADO.NET para manipulação de dados: <br>
 [Dataset](DataSet.md)<br>
 [Datatable](DataTable.md)<br>
 [DataColumn](DataColumn.md)<br>
